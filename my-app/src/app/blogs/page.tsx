@@ -7,6 +7,7 @@ import '../page.css'
 
 // import components here 
 import Navbar from '../components/navbar/navbar'
+import Footer from '../components/footer/footer'
 
 
 // import images here
@@ -51,6 +52,10 @@ const page = () => {
                             <BlogCard title='OpenSource' des='Introduction to OpenSource.' img={OpenSource} />    
                         </div>
                     </div>
+                </div>
+
+                <div className="Blog-Footer">
+                    <Footer />
                 </div>
 
             </div>
