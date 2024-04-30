@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             <div className="HomeWelcome">
-                <p>Hello and welcome to Tadikonda Sai Manikanta&apos;s portfolio!</p>
+                <p>Hey, I&apos;m Tadikonda Sai Manikanta, welcome to my portfolio!</p>
                 {/* <Link href='/'>Resume</Link> */}
             </div>
             

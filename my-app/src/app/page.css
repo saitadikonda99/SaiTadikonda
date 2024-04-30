@@ -8,18 +8,18 @@
     width: 100%;
 }
 
-
 .HomeWelcome {
     width: 100%;
     text-align: center;
     background-color: rgb(255, 255, 255);
+    background-color: black;
     padding: 1rem;
 }
 
 .HomeWelcome p {
     font-size: 1rem;
     font-weight: 400;
-    color: black;
+    color: white;
 }
 
 .Home-one {
