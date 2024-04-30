@@ -1,0 +1,45 @@
+
+
+.NavbarComponent {
+    width: 100%;
+    background-color: rgb(245, 245, 247);
+}
+
+.NavbarComponent-in {
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Nav-one {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.Nav-one p{
+    font-size: 1rem;
+    color: black;
+}
+
+.email-icon {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.Nav-two {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(100, 99, 99);
+}
+
+.Nav-two a:hover {
+    color: black;
+}

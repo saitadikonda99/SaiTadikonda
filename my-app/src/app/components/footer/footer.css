@@ -1,0 +1,56 @@
+
+
+.FooterComponent {
+    width: 100%;
+    background-color: rgb(245, 245, 247);
+}
+
+.FooterComponent-in {
+    width: 100%;
+}
+
+.Footer-one {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.Footer-one-one {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem
+}
+
+.Footer-one-one p {
+    font-size: 1rem;
+    color: black;
+}
+
+.Footer-one-two {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(100, 99, 99);
+}
+
+.Footer-two {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.Footer-two-in {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.Footer-two-in p {
+    color: rgb(100, 99, 99);
+    padding: .8rem;
+}
+
