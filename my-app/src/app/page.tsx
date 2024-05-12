@@ -129,37 +129,51 @@ export default function Home() {
                         <div className="Project-front"></div>
 
                         <div className="ProjectBox">
-                            
-                            <div className="ProBox-one">
-                            <video
-                                preload='auto'
-                                autoPlay
-                                loop
-                                style={{ width: "100%" }}
-                                src="https://firebasestorage.googleapis.com/v0/b/saitadikonda-2d971.appspot.com/o/SAC.mp4?alt=media&token=48a2ac62-a59c-4dd5-9df5-395b3362f0d3"
+                            <ProjectCard 
+                                videoLink='https://firebasestorage.googleapis.com/v0/b/saitadikonda-2d971.appspot.com/o/SAC.mp4?alt=media&token=48a2ac62-a59c-4dd5-9df5-395b3362f0d3' 
+                                title='SAC Website' 
+                                des='Student Activity Center (SAC) Website is a website that provides information about the events and activities that are conducted in the college.'  
                             />
-                            </div>
-
-                            <div className="ProBox-four">
-                                <IoLogoGithub />
-                                <FiExternalLink />
-                            </div>
-
                         </div>
-                        <div className="ProjectBox">
 
+                        <div className="ProjectBox">
+                            <ProjectCard 
+                                videoLink='https://firebasestorage.googleapis.com/v0/b/saitadikonda-2d971.appspot.com/o/SAC.mp4?alt=media&token=48a2ac62-a59c-4dd5-9df5-395b3362f0d3' 
+                                title='SVR Website' 
+                                des='Smart Village Revolution (SVR) Website is a website that provides information about the events and activities that are conducted in the village.'  
+                            />
                         </div>
-                        <div className="ProjectBox">
 
+                        <div className="ProjectBox">
+                            <ProjectCard 
+                                videoLink='https://firebasestorage.googleapis.com/v0/b/saitadikonda-2d971.appspot.com/o/SAC.mp4?alt=media&token=48a2ac62-a59c-4dd5-9df5-395b3362f0d3' 
+                                title='JWT Authentication' 
+                                des='Student Activity Center (SAC) Website is a website that provides information about the events and activities that are conducted in the college.'  
+                            />
                         </div>
-                        <div className="ProjectBox">
 
+                        <div className="ProjectBox">
+                            <ProjectCard 
+                                videoLink='https://firebasestorage.googleapis.com/v0/b/saitadikonda-2d971.appspot.com/o/SAC.mp4?alt=media&token=48a2ac62-a59c-4dd5-9df5-395b3362f0d3' 
+                                title='JWT Authentication' 
+                                des='Student Activity Center (SAC) Website is a website that provides information about the events and activities that are conducted in the college.'  
+                            />
                         </div>
-                        <div className="ProjectBox">
 
+                        <div className="ProjectBox">
+                            <ProjectCard 
+                                videoLink='https://firebasestorage.googleapis.com/v0/b/saitadikonda-2d971.appspot.com/o/SAC.mp4?alt=media&token=48a2ac62-a59c-4dd5-9df5-395b3362f0d3' 
+                                title='Docker' 
+                                des='Student Activity Center (SAC) Website is a website that provides information about the events and activities that are conducted in the college.'  
+                            />
                         </div>
-                        <div className="ProjectBox">
 
+                        <div className="ProjectBox">
+                            <ProjectCard 
+                                videoLink='https://firebasestorage.googleapis.com/v0/b/saitadikonda-2d971.appspot.com/o/SAC.mp4?alt=media&token=48a2ac62-a59c-4dd5-9df5-395b3362f0d3' 
+                                title='Kubernetes' 
+                                des='Student Activity Center (SAC) Website is a website that provides information about the events and activities that are conducted in the college.'  
+                            />
                         </div>
                     
                         <div className="Project-front"></div>
@@ -181,4 +195,36 @@ export default function Home() {
         </div>
     </div>
   );
+}
+
+
+const ProjectCard = (props : any) => {
+
+    return (
+        <div>
+            <div className="ProBox-one">
+                <video
+                    preload='auto'
+                    autoPlay
+                    muted
+                    loop
+                    style={{ width: "100%" }}
+                    src={props.videoLink}
+                />
+            </div>
+
+            <div className="ProBox-two">
+                <h1>{props.title}</h1>
+            </div>
+
+            <div className="ProBox-three">
+                <p>{props.des}</p>
+            </div>
+
+            <div className="ProBox-four">
+                <IoLogoGithub />
+                <FiExternalLink />
+            </div>
+        </div>
+    )
 }
