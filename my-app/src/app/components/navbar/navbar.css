@@ -1,8 +1,6 @@
-
-
 .NavbarComponent {
     width: 100%;
-    background-color: rgb(245, 245, 247);
+    background-color: black;
 }
 
 .NavbarComponent-in {
@@ -23,13 +21,13 @@
 }
 
 .Nav-one p{
-    font-size: 1rem;
-    color: black;
+    font-size: .8rem;
+    color: white;
 }
 
 .email-icon {
-    font-size: 1.2rem;
-    color: black;
+    font-size: .8rem;
+    color: white;
 }
 
 .Nav-two {
@@ -40,6 +38,12 @@
     color: rgb(100, 99, 99);
 }
 
+.Nav-two a {
+    color: white;
+    text-decoration: none;
+    font-size: .8rem
+}
+
 .Nav-two a:hover {
-    color: black;
+    color: rgb(0, 113, 227);
 }

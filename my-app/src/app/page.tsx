@@ -1,11 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next/link';   
+import { useState, useRef } from 'react';
 
 import './globals.css';
 import './page.css';
 
 import { FaArrowDown } from "react-icons/fa";
+import { FaCircleChevronLeft } from "react-icons/fa6";
+import { FaCircleChevronRight } from "react-icons/fa6";
+import { FiExternalLink } from "react-icons/fi";
+import { IoLogoGithub } from "react-icons/io";
 
 // import images here 
 import SaiImg from './assets/Sai.png';
@@ -14,12 +19,34 @@ import Linkedin from './assets/LinkedIn.png';
 import Twitter from './assets/Twitter.png';
 import Telegram from './assets/Telegram.png';
 import Instagram from './assets/Instagram.png';
+import GalleryOne from './assets/Gallery/GalleryOne.png';
+import GalleryTwo from './assets/Gallery/GalleryTwo.png';
+import GalleryThree from './assets/Gallery/GalleryThree.png';
+import GalleryFour from './assets/Gallery/GalleryFour.png';
+
 
 // import components here
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 
 export default function Home() {
+
+
+
+    // const handleScroll = (scrollOffset: number) => {
+    //     const container = document.querySelector('.HomeProject-two');
+    //     if (container) {
+    //         const currentScrollLeft = container.scrollLeft;
+    //         const targetScrollLeft = currentScrollLeft + scrollOffset;
+    
+    //         container.scrollTo({
+    //             left: targetScrollLeft,
+    //             behavior: 'smooth'
+    //         });
+    //     }
+    // }
+
+
   return (
     <div className="HomeComponent">
         <div className="HomeComponent-in">
@@ -43,7 +70,7 @@ export default function Home() {
                             </h1>
                         </div>
                         <div className="Home-one-in-one-two">
-                            <p>Tadikonda Sai Manikanta works as a developer relations manager at Civo, where he drives innovation in cloud-native technologies and has educated thousands of developers. Renowned for his empathetic approach and community leadership.</p>
+                            <p>Tadikonda Sai Manikanta works as a developer relations manager at , where he drives innovation in cloud-native technologies and has educated thousands of developers. Renowned for his empathetic approach and community leadership.</p>
                         </div>
                         <div className="Home-one-in-one-three">
 
@@ -86,9 +113,65 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="Home-two">
 
+
+            <div className="Home-two">
+                
             </div>
+
+
+            <div className="HomeProjects">
+                <div className="HomeProjects-in">
+                    <div className="HomeProject-one">
+                        <h1>Project / Work I Did</h1>
+                    </div>
+                    <div className="HomeProject-two">
+                        <div className="Project-front"></div>
+
+                        <div className="ProjectBox">
+                            
+                            <div className="ProBox-one">
+                            <video
+                                preload='auto'
+                                autoPlay
+                                loop
+                                style={{ width: "100%" }}
+                                src="https://firebasestorage.googleapis.com/v0/b/sacwebsite-8d0b5.appspot.com/o/HeroVideo%2FnewVideo.mp4?alt=media&token=d193f8c5-f11a-4a44-9f08-f5ead58b33d8"
+                            />
+                            </div>
+
+                            <div className="ProBox-four">
+                                <IoLogoGithub />
+                                <FiExternalLink />
+                            </div>
+
+                        </div>
+                        <div className="ProjectBox">
+
+                        </div>
+                        <div className="ProjectBox">
+
+                        </div>
+                        <div className="ProjectBox">
+
+                        </div>
+                        <div className="ProjectBox">
+
+                        </div>
+                        <div className="ProjectBox">
+
+                        </div>
+                    
+                        <div className="Project-front"></div>
+                    </div>
+                    {/* <div className="HomeProject-three">
+                        <div onClick={() => handleScroll(-1000)}> <FaCircleChevronLeft className='scroll' /> </div>
+                        <div onClick={() => handleScroll(1000)}> <FaCircleChevronRight className='scroll' /> </div>
+                    </div> */}
+                </div>
+            </div>
+
+            
 
 
             <div className="HomeFooter">

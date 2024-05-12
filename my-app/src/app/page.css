@@ -1,4 +1,9 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 
 .HomeComponent {
     width: 100%;
@@ -11,21 +16,19 @@
 .HomeWelcome {
     width: 100%;
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    background-color: black;
     padding: 1rem;
 }
 
 .HomeWelcome p {
     font-size: 1rem;
     font-weight: 400;
-    color: white;
+    color: black;
 }
 
 .Home-one {
     width: 100%;
     height: 90vh;
-    background-color: rgb(245, 245, 247);
+    background-color: black;
 }
 
 .Home-one-in {
@@ -47,12 +50,14 @@
 .Home-one-in-one-one h1 {
     font-size: 2.5rem;
     font-weight: 500;
-    color: rgb(92, 92, 92);
+    color: rgb(239, 239, 241);
     line-height: 3.4rem;
 }
 
 .Home-one-in-one-one h1 span {
-    color: black;
+    background: linear-gradient(to left, rgb(0, 113, 227), rgb(239, 239, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .Home-one-in-one-two {
@@ -63,7 +68,7 @@
 .Home-one-in-one-two p {
     font-size: 1.1rem;
     font-weight: 300;
-    color: rgb(35, 35, 35);
+    color: rgb(134, 134, 139);
     line-height: 1.8rem;
 }
 
@@ -89,11 +94,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(0, 113, 227);
 }
 
 .HomeKnowMore a {
     font-size: 1rem;
+    text-decoration: none;
     font-weight: 400;
     color: white;
     display: flex;
@@ -126,5 +132,97 @@
 
 .Home-two {
     padding: 10rem;
+    background-color: black;
+}
+  
+
+
+/* ---------------- Home Projects ---------------- */
+
+.HomeProjects {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(22, 22, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.HomeProjects-in {
+    padding: 2rem 0rem;
+    width: 100%;
+}
+
+.HomeProject-one {
+    width: 88%;
+    margin: auto;
+}
+
+.HomeProject-one h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: rgb(239, 239, 241);
+    padding: 1rem 0rem;
+}
+
+
+.HomeProject-two {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 0rem;
+    overflow-x: auto;
+}
+
+.Project-front {
+    flex: 0 0 4%; 
+    background-color: rgb(22, 22, 23);
+}
+
+.ProjectBox {
+    flex: 0 0 28%; 
+    padding: 2rem 0rem;
+    height: 42vh;
+    border-radius: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.ProBox-one {
+    width: 80%;
+}
+
+.ProBox-one video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.ProBox-four {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 1.5rem;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* .HomeProject-three {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+.scroll {
+    color: rgb(0, 113, 227);
+    cursor: pointer;
+} */

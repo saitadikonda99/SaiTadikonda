@@ -4,14 +4,14 @@ import Link from 'next/link'
 import './navbar.css'
 
 // import icons here 
-import { AiTwotoneMail } from "react-icons/ai";
+import { IoMailOutline } from "react-icons/io5";
 
 const navbar = () => {
   return (
     <div className="NavbarComponent">
         <div className="NavbarComponent-in">
             <div className="Nav-one">
-                <AiTwotoneMail className='email-icon' />
+                <IoMailOutline className='email-icon' />
                 <p>saitadikonda.cse@gmail.com</p>
             </div>
 

@@ -19,6 +19,7 @@
 
 .Blog-two {
     width: 100%;
+    background-color: white;
 }
 
 .Blog-two-in {
@@ -29,6 +30,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: .8rem;
+
 }
 
 .Blog-card {
