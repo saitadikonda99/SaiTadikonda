@@ -76,7 +76,7 @@ export default function Home() {
                         <div className="Home-one-content-one">
                             <div className="Home-one-content-one-in">
                                 <div className="Home-oco-in-one">
-                                    <h1>Hello, I'm Tadikonda Sai Manikanta</h1>
+                                    <h1>Hello, I&apos;m Tadikonda Sai Manikanta</h1>
                                 </div>
                                 <div className="Home-oco-in-two">
                                     <p>Tadikonda Sai Manikanta is a Full stack Developer and DevOps Engineer, where he drives innovation in cloud technologies and currently third year CS. undergrad.</p>
