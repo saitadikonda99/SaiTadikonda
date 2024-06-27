@@ -50,13 +50,18 @@ export default function Home() {
         };
     }, []);
 
+    const handleScroll = (id : string) => {
+        const element = document.getElementsByClassName(id)[0];
+        element.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className="HomeComponent">
             <div className="Home-navigator">
-                <div className={`Home-navigators ${activeSection === 'home' ? 'active-nav' : ''}`}></div>
-                <div className={`Home-navigators ${activeSection === 'about' ? 'active-nav' : ''}`}></div>
-                <div className={`Home-navigators ${activeSection === 'skills' ? 'active-nav' : ''}`}></div>
-                <div className={`Home-navigators ${activeSection === 'projects' ? 'active-nav' : ''}`}></div>
+                <div className={`Home-navigators ${activeSection === 'home' ? 'active-nav' : ''}`} onClick={() => handleScroll("HomeNav")}></div>
+                <div className={`Home-navigators ${activeSection === 'about' ? 'active-nav' : ''}`} onClick={() => handleScroll("Home-two")}></div>
+                <div className={`Home-navigators ${activeSection === 'skills' ? 'active-nav' : ''}`} onClick={() => handleScroll("Home-three")}></div>
+                <div className={`Home-navigators ${activeSection === 'projects' ? 'active-nav' : ''}`} onClick={() => handleScroll("Home-four")}></div>
             </div>
 
             <div className="HomeComponent-in">
@@ -115,7 +120,7 @@ export default function Home() {
                     {/* Projects section content */}
                 </div>
 
-                
+
             </div>
         </div>
     );
