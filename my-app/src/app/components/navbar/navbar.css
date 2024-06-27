@@ -1,49 +1,56 @@
-.NavbarComponent {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.NavComponent {
     width: 100%;
-    background-color: black;
 }
 
-.NavbarComponent-in {
-    width: 100%;
-    padding: 1rem 4rem;
+.NavComponent-in {
+    padding: 8rem 0rem 1rem 0rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-
-.Nav-one {
-    width: 18%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .4rem;
-}
-
-.Nav-one p{
-    font-size: .8rem;
-    color: white;
-}
-
-.email-icon {
-    font-size: .8rem;
-    color: white;
-}
-
-.Nav-two {
+.Navbar-one {
     width: 50%;
+}
+
+.Navbar-one-in {
+    width: 60%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    color: rgb(100, 99, 99);
+    justify-content: flex-start;
+    gap: .6rem;
 }
 
-.Nav-two a {
-    color: white;
+.Navbar-one-in p {
+    font-size: 1rem;
+}
+
+.mail-icon {
+    color: black;
+}
+
+.Navbar-two {
+    width: 50%;
+}
+
+.Navbar-two-in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar-two-in a {
     text-decoration: none;
-    font-size: .8rem
+    color: black;
+    font-size: 1rem;
 }
 
-.Nav-two a:hover {
-    color: rgb(0, 113, 227);
+.Navbar-two-in a:hover {
+    color: blue;
 }
+

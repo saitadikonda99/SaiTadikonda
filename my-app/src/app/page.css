@@ -1,246 +1,143 @@
+@font-face {
+    font-family: 'Virgil';
+    src: url('/Virgil.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Virgil', cursive;
 }
 
 .HomeComponent {
     width: 100%;
 }
 
+.Home-navigator {
+    position: fixed;
+    width: 2%;
+    top: 40%;
+    right: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.Home-navigators {
+    width: 90%;
+    margin: auto;
+    padding: .2rem;
+    border-radius: 5px;
+    background-color: rgb(173, 169, 169);
+}
+
+.active-nav {
+    width: 90%;
+    margin: auto;
+    padding: .2rem;
+    border-radius: 5px;
+    background-color: blue;
+}
+
 .HomeComponent-in {
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
-
-.HomeWelcome {
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-}
-
-.HomeWelcome p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: black;
-}
-
+  
 .Home-one {
     width: 100%;
-    height: 90vh;
-    background-color: black;
 }
 
 .Home-one-in {
-    width: 90%;
-    margin: auto;
-    display: flex;
-}
-
-.Home-one-in-one {
-    width: 60%;
-    padding: 2rem;
-}
-
-.Home-one-in-one-one {
-    width: 100%;
-    padding: 5rem 0rem 2rem 0rem;
-}
-
-.Home-one-in-one-one h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: rgb(239, 239, 241);
-    line-height: 3.4rem;
-}
-
-.Home-one-in-one-one h1 span {
-    background: linear-gradient(to left, rgb(0, 113, 227), rgb(239, 239, 241));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Home-one-in-one-two {
-    width: 100%;
-    padding: 0rem 0rem 2rem 0rem;
-}
-
-.Home-one-in-one-two p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: rgb(134, 134, 139);
-    line-height: 1.8rem;
-}
-
-.Home-one-in-two {
-    width: 40%;
-    padding: 5rem;
-}
-
-.Home-one-in-one-three {
     width: 100%;
     padding: 2rem 0rem;
+    height: 70vh;    
     display: flex;
+}
+
+.Home-one-content-one {
+    width: 55%;
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home-oco-in-one {
+    padding: 1rem 0rem;
+}
+
+.Home-oco-in-one h1 {
+    font-size: 2.1rem;
+}
+
+.Home-oco-in-two {
+    padding: .5rem 0rem;
+}
+
+.Home-oco-in-two p {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.Home-oco-in-three {
+    width: 100%;
+}
+
+.Home-oco-in-three-in {
+    display: flex;
+    padding: 2rem 0rem;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.HomeKnowMore {
-    width: 30%;
-    border: .1px solid rgb(100, 99, 99);
-    padding: 1.4rem;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 113, 227);
-}
-
-.HomeKnowMore a {
-    font-size: 1rem;
+.Home-oco-in-three-in a {
+    padding: .8rem 1.2rem;
     text-decoration: none;
-    font-weight: 400;
     color: white;
+    background-color: black;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .4rem;
+    gap: .5rem;
 }
 
-.HomeDock {
-    width: 33%;
-    padding: .8rem;
-    border-radius: 20px;
-    border: .1px solid rgb(100, 99, 99);
+.Home-one-content-two {
+    width: 45%;
+}
+
+.Home-one-content-two-in {
+    width: 100%;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.HomeDock Img {
-    padding: .4rem;
-    border-radius: 50%;
-    background-color: rgb(227, 227, 227);
-    transition: transform 0.3s ease;
+.Home-one-content-two-in img {
+    width: 80%;
+    height: 90%;
 }
 
-.HomeDock Img:hover {
-    transform: scale(1.4);
-}
-
+/* --------------- Home-two --------------- */
 
 .Home-two {
-    padding: 10rem;
-    background-color: black;
-}
-  
-
-
-/* ---------------- Home Projects ---------------- */
-
-.HomeProjects {
     width: 100%;
     height: 100vh;
-    background-color: rgb(22, 22, 23);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.HomeProjects-in {
-    padding: 2rem 0rem;
+.Home-three {
     width: 100%;
+    height: 100vh;
 }
 
-.HomeProject-one {
-    width: 88%;
-    margin: auto;
-}
-
-.HomeProject-one h1 {
-    font-size: 2.8rem;
-    font-weight: 600;
-    color: rgb(239, 239, 241);
-    padding: 1rem 0rem;
-}
-
-
-.HomeProject-two {
+.Home-four {
     width: 100%;
-    display: flex;
-    gap: 2rem;
-    padding: 4rem 0rem;
-    overflow-x: auto;
+    height: 100vh;
 }
-
-.Project-front {
-    flex: 0 0 4%; 
-    background-color: rgb(22, 22, 23);
-}
-
-.ProjectBox {
-    flex: 0 0 28%; 
-    padding: 1rem 0rem;
-    border-radius: 2rem;
-    background-color: black;
-    color: white;
-}
-
-.ProBox-one {
-    width: 80%;
-    padding: 1rem 2rem 1rem 2rem;
-}
-
-.ProBox-one video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.ProBox-two {
-    width: 100%;
-    padding: 1rem 2rem;
-}
-
-.ProBox-two h1 {
-    font-size: 1.5rem;
-}
-
-.ProBox-three {
-    width: 100%;
-    padding: 0rem 2rem;
-}
-
-.ProBox-three p {
-    font-size: 1rem;
-    color: rgb(134, 134, 139);
-}
-
-.ProBox-four {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: white;
-    font-size: 1.5rem;
-    gap: 1rem;
-    padding: 1rem 2rem;
-}
-
-*::-webkit-scrollbar {
-    display: none;
-}
-
-/* .HomeProject-three {
-    width: 86%;
-    margin: auto;
-    display: flex;
-    font-size: 2rem;
-    gap: 1rem;
-}
-
-.scroll {
-    color: rgb(0, 113, 227);
-    cursor: pointer;
-} */

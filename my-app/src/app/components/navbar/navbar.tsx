@@ -1,29 +1,34 @@
 import React from 'react'
-import Link from 'next/link'
-
+import Link from 'next/link';   
 import './navbar.css'
 
 // import icons here 
-import { IoMailOutline } from "react-icons/io5";
+import { LuMail } from "react-icons/lu";
 
 const navbar = () => {
   return (
-    <div className="NavbarComponent">
-        <div className="NavbarComponent-in">
-            <div className="Nav-one">
-                <IoMailOutline className='email-icon' />
-                <p>saitadikonda.cse@gmail.com</p>
-            </div>
+		<div className="NavComponent">
+			<div className="NavComponent-in">
+				
+				<div className="Navbar-one">
+					<div className="Navbar-one-in">
+						<LuMail className='mail-icon' />
+						<p>saitadikonda.cse@gmail.com</p>
+					</div>
+				</div>
 
-            <div className="Nav-two">
-                <Link href='/'>Home</Link>
-                <Link href='/'>Work</Link>
-                <Link href='/'>Projects</Link>
-                <Link href='/'>Resume</Link>
-                <Link href='/blogs'>Blogs</Link>
-            </div>
-        </div>
-    </div>
+				<div className="Navbar-two">
+					<div className="Navbar-two-in">
+						<Link href='/'> Home </Link>
+						<Link href='/'> About me </Link>
+						<Link href='/'> Skills </Link>
+						<Link href='/'> Projects </Link>
+						<Link href='/'> Blogs </Link>
+					</div>
+				</div>
+
+			</div>
+		</div>
   )
 }
 
