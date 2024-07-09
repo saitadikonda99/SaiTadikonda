@@ -7,13 +7,14 @@ import './page.css';
 
 // import components here
 import Navbar from './components/navbar/navbar';
+import Terminal from './UI/Terminal';
 
 // import icons here
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaArrowDown } from "react-icons/fa6";
 
 // import styles here
-import HeroImg from './assets/Hero.png';
+
 
 
 export default function Home() {
@@ -91,12 +92,7 @@ export default function Home() {
                         </div>
                         <div className="Home-one-content-two">
                             <div className="Home-one-content-two-in">
-                                <Image 
-                                    src={HeroImg}
-                                    alt="Sai Tadikonda"
-                                    width={400}
-                                    height={400}
-                                />
+                                
                             </div>
                         </div>
                     </div>
@@ -105,20 +101,22 @@ export default function Home() {
                 {/* ------- Home two ------- */}
 
                 <div id="about" className="Home-two" ref={aboutRef}>
-                    
+                    <div className="Home-two-in">
+                        <h1>Know About Me / Terminal</h1>
+                        <Terminal />
+                    </div>
                 </div>
 
-                {/* ------- Home three ------- */}
 
-                <div id="skills" className="Home-three" ref={skillsRef}>
-                    {/* Skills section content */}
+                {/* <div id="skills" className="Home-three" ref={skillsRef}>
+
                 </div>
 
-                {/* ------- Home four ------- */}
+
 
                 <div id="projects" className="Home-four" ref={projectsRef}>
-                    {/* Projects section content */}
-                </div>
+
+                </div> */}
 
 
             </div>

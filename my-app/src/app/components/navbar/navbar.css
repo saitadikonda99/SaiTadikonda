@@ -6,9 +6,13 @@
 
 .NavComponent {
     width: 100%;
+    background-color: black;
+    color: white;
 }
 
 .NavComponent-in {
+    width: 80%;
+    margin: auto;
     padding: 4rem 0rem 1rem 0rem;
     display: flex;
 }
@@ -30,7 +34,7 @@
 }
 
 .mail-icon {
-    color: black;
+    color: white;
 }
 
 .Navbar-two {
@@ -46,7 +50,7 @@
 
 .Navbar-two-in a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1rem;
 }
 
