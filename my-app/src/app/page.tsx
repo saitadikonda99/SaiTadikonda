@@ -7,7 +7,9 @@ import './page.css';
 
 // import components here
 import Navbar from './components/navbar/navbar';
-import Terminal from './UI/Terminal';
+import Terminal from './UI/terminal/Terminal';
+import Footer from './components/footer/footer';
+
 
 // import icons here
 import { IoDocumentTextOutline } from "react-icons/io5";
@@ -118,7 +120,9 @@ export default function Home() {
 
                 </div> */}
 
-
+                <div className="Footer">
+                    <Footer />
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,16 @@
+
+.FooterComponent {
+    width: 100%;
+    background-color: black;
+    padding: 2rem;
+}
+
+.FooterComponent-in {
+    width: 100%;
+}
+
+.FooterComponent-in p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
