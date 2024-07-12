@@ -1,19 +1,17 @@
-@font-face {
-    font-family: 'Monaco';
-    src: url('./Fonts/Monaco.woff') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Monaco', monospace;
+}
+
+h1 {
+    font-weight: 600;
 }
 
 .HomeComponent {
     width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
 }
 
 .Home-navigator {
@@ -40,7 +38,7 @@
     margin: auto;
     padding: .2rem;
     border-radius: 5px;
-    background-color: blue;
+    background-color: rgb(1, 113, 227);
 }
 
 .HomeComponent-in {
@@ -144,20 +142,81 @@
 }
 
 .Home-two-in {
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 4rem 0rem;
 }
 
-.Home-two-in h1 {
-    font-size: 1.8rem;
+.Home-two-one {
+    width: 50%;
+}
+
+.Home-two-one h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
     padding: 2rem 0rem;
+}
+
+.Home-two-one h1 span {
+    color: rgb(138, 138, 138);
+}
+
+.Home-two-two {
+    width: 100%;
 }
 
 .Home-three {
     width: 100%;
+    background-color: black;
+}
+
+.Home-three-in {
+    width: 100%;
+    margin: auto;
+    padding: 4rem 0rem;
+}
+
+.Home-three-one {
+    width: 80%;
+    margin: auto;
+}
+
+.Home-three-one-one {
+    width: 50%;
+}
+
+.Home-three-one-one h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.Home-three-one-one h1 span {
+    color: rgb(138, 138, 138);
 }
 
 .Home-four {
     width: 100%;
+    padding: 4rem 0rem;
+}
+
+.Home-four-in {
+    width: 100%;
+    margin: auto;
+    padding: 2rem 0rem;
+}
+
+.Home-four-one {
+    width: 80%;
+    margin: auto;
+}
+
+.Home-four-one h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.Home-four-one h1 span {
+    color: rgb(138, 138, 138);
 }

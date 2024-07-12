@@ -1,8 +1,16 @@
 
+@font-face {
+    font-family: 'Monaco';
+    src: url('../../Fonts/Monaco.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .TerminalComponent {
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 80vh;
+    font-family: 'Monaco' monospace;
 }
 
 .help-command {

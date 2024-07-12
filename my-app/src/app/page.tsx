@@ -9,7 +9,8 @@ import './page.css';
 import Navbar from './components/navbar/navbar';
 import Terminal from './UI/terminal/Terminal';
 import Footer from './components/footer/footer';
-
+import Card from './UI/cards/Card';
+import Skills from './UI/skills/Skill';
 
 // import icons here
 import { IoDocumentTextOutline } from "react-icons/io5";
@@ -104,21 +105,41 @@ export default function Home() {
 
                 <div id="about" className="Home-two" ref={aboutRef}>
                     <div className="Home-two-in">
-                        <h1>Know About Me / Terminal</h1>
-                        <Terminal />
+                        <div className="Home-two-one">
+                            <h1>Terminal.<span>The best way to know about me.</span></h1>
+                        </div>
+                        <div className="Home-two-two">
+                            <Terminal />
+                        </div>
                     </div>
                 </div>
 
 
-                {/* <div id="skills" className="Home-three" ref={skillsRef}>
+                <div id="skills" className="Home-three" ref={skillsRef}>
+                    <div className="Home-three-in">
+                        <div className="Home-three-one">
+                            <div className="Home-three-one-one">
+                                <h1>Skills.<span>Transforming Concepts into Reality.</span></h1>
+                            </div>
+                        </div>
+                        <div className="Home-three-two">
+                            <Skills />
+                        </div>
+                    </div>
+                </div>
 
+                <div id="projects" className="Home-four" ref={projectsRef}>
+                    <div className="Home-four-in">
+                        <div className="Home-four-one">
+                            <h1>Projects.<span>Take a look at my work, right now.</span></h1>
+                        </div>
+                        <div className="Home-four-two">
+                            <Card />    
+                        </div>
+                    </div>
                 </div>
 
 
-
-                <div id="projects" className="Home-four" ref={projectsRef}>
-
-                </div> */}
 
                 <div className="Footer">
                     <Footer />
