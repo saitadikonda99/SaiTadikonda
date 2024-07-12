@@ -5,6 +5,8 @@ import './Skill.css'
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
+import { SiMysql } from "react-icons/si";
+
 
 
 const Skills = () => {
@@ -15,20 +17,27 @@ const Skills = () => {
 
                 <SkillComponent tech="react" />
                 <SkillComponent tech="next.js" />
-                <SkillComponent tech="next.js" />
-                <SkillComponent tech="next.js" />
-                <SkillComponent tech="next.js" />
                 <SkillComponent tech="node.js" />
-                <SkillComponent tech="node.js" />
-                <SkillComponent tech="node.js" />
-                <SkillComponent tech="node.js" />
-                <SkillComponent tech="node.js" />
-                <SkillComponent tech="node.js" />
-                <SkillComponent tech="node.js" />
-                <SkillComponent tech="node.js" />
-                <SkillComponent tech="next.js" />
-                <SkillComponent tech="node.js" />
+                <SkillComponent tech="mysql" />
 
+                <SkillComponent tech="react" />
+                <SkillComponent tech="next.js" />
+                <SkillComponent tech="node.js" />
+                <SkillComponent tech="mysql" />
+                <SkillComponent tech="react" />
+                <SkillComponent tech="next.js" />
+                <SkillComponent tech="node.js" />
+                <SkillComponent tech="mysql" />
+                <SkillComponent tech="react" />
+                <SkillComponent tech="next.js" />
+                <SkillComponent tech="node.js" />
+                <SkillComponent tech="mysql" />
+                <SkillComponent tech="react" />
+                <SkillComponent tech="next.js" />
+                <SkillComponent tech="node.js" />
+                <SkillComponent tech="mysql" />
+                
+                <div className="HiddenSkill"></div>
             </div>
         </div>
   )
@@ -45,6 +54,7 @@ const SkillComponent = (props : any) => {
                     {props.tech === "react" && <FaReact className='skill-icon-react skill-icon' />}
                     {props.tech === "next.js" && <TbBrandNextjs className='skill-icon-next skill-icon' />}
                     {props.tech === "node.js" && <DiNodejs className='skill-icon-node skill-icon' />}
+                    {props.tech === "mysql" && <SiMysql className='skill-icon-mysql skill-icon' />}
                 </div>
                 <div className="Skill-two">
                     <p>{props.tech}</p>

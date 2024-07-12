@@ -46,7 +46,7 @@ const CardComponent = (props : any) => {
                         <p>Technologies Used: </p>
                         <div className="tech-stack">
                             {props.techStack.map((tech : string) => (
-                                <div className="tech-stack-item">
+                                <div className="tech-stack-item" key={tech} >
                                     {tech === "react" && <FaReact className='project-icon-react' />}
                                     {tech === "next.js" && <TbBrandNextjs className='project-icon-next' />}
                                     {tech === "node.js" && <DiNodejs className='project-icon-node' />}
