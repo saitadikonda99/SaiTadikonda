@@ -16,6 +16,7 @@ import Skills from './UI/skills/Skill';
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaArrowDown } from "react-icons/fa6";
 
+
 // import styles here
 
 
@@ -59,6 +60,9 @@ export default function Home() {
         element.scrollIntoView({ behavior: 'smooth' });
     };
 
+
+        
+
     return (
         <div className="HomeComponent">
             <div className="Home-navigator">
@@ -87,8 +91,8 @@ export default function Home() {
                                 </div>
                                 <div className="Home-oco-in-three">
                                     <div className="Home-oco-in-three-in">
-                                        <Link href='/' >Know more <FaArrowDown/> </Link>
-                                        <Link href='https://drive.google.com/file/d/1xmGNraGIXp8ozCEZii9T6mzuJZPEVcjY/view' target='_blank' >Resume <IoDocumentTextOutline/> </Link>
+                                        <Link href='/' onClick={() => handleScroll("Home-two")} >Know more <FaArrowDown/> </Link>
+                                        <Link href='https://drive.google.com/file/d/1qyj1o7FK4oDxqjpWWCxvDqcFMFDPbC4C/view' target='_blank' >Resume <IoDocumentTextOutline/> </Link>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +123,7 @@ export default function Home() {
                     <div className="Home-three-in">
                         <div className="Home-three-one">
                             <div className="Home-three-one-one">
-                                <h1>Skills.<span>Transforming Concepts into Reality.</span></h1>
+                                <h1>Skills & Tools.<span>Transforming Concepts into Reality.</span></h1>
                             </div>
                         </div>
                         <div className="Home-three-two">
