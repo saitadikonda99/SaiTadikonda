@@ -1,5 +1,4 @@
 "use client"
-import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -22,56 +21,16 @@ import { FaArrowDown } from "react-icons/fa6";
 
 
 export default function Home() {
-    const [activeSection, setActiveSection] = useState('home');
-
-    const homeRef = useRef(null);
-    const aboutRef = useRef(null);
-    const skillsRef = useRef(null);
-    const projectsRef = useRef(null);
-
-    useEffect(() => {
-        const options = {
-            threshold: 0.7,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
-                }
-            });
-        }, options);
-
-        const sections = [homeRef.current, aboutRef.current, skillsRef.current, projectsRef.current];
-
-        sections.forEach((section) => {
-            if (section) observer.observe(section);
-        });
-
-        return () => {
-            sections.forEach((section) => {
-                if (section) observer.unobserve(section);
-            });
-        };
-    }, []);
 
     const handleScroll = (id : string) => {
-        const element = document.getElementsByClassName(id)[0];
-        element.scrollIntoView({ behavior: 'smooth' });
+        const element = document.getElementsByClassName(id)[0] as HTMLElement;
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
-
-
-        
 
     return (
         <div className="HomeComponent">
-            <div className="Home-navigator">
-                <div className={`Home-navigators ${activeSection === 'home' ? 'active-nav' : ''}`} onClick={() => handleScroll("HomeNav")}></div>
-                <div className={`Home-navigators ${activeSection === 'about' ? 'active-nav' : ''}`} onClick={() => handleScroll("Home-two")}></div>
-                <div className={`Home-navigators ${activeSection === 'skills' ? 'active-nav' : ''}`} onClick={() => handleScroll("Home-three")}></div>
-                <div className={`Home-navigators ${activeSection === 'projects' ? 'active-nav' : ''}`} onClick={() => handleScroll("Home-four")}></div>
-            </div>
-
             <div className="HomeComponent-in">
                 <div className="HomeNav">
                     <Navbar />
@@ -79,7 +38,7 @@ export default function Home() {
 
                 {/* ------- Home one ------- */}
 
-                <div id="home" className="Home-one" ref={homeRef}>
+                <div id="home" className="Home-one">
                     <div className="Home-one-in">
                         <div className="Home-one-content-one">
                             <div className="Home-one-content-one-in">
@@ -107,7 +66,7 @@ export default function Home() {
 
                 {/* ------- Home two ------- */}
 
-                <div id="about" className="Home-two" ref={aboutRef}>
+                <div id="about" className="Home-two">
                     <div className="Home-two-in">
                         <div className="Home-two-one">
                             <h1>Terminal.<span>The best way to know about me.</span></h1>
@@ -119,7 +78,7 @@ export default function Home() {
                 </div>
 
 
-                <div id="skills" className="Home-three" ref={skillsRef}>
+                <div id="skills" className="Home-three">
                     <div className="Home-three-in">
                         <div className="Home-three-one">
                             <div className="Home-three-one-one">
@@ -132,7 +91,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div id="projects" className="Home-four" ref={projectsRef}>
+                <div id="projects" className="Home-four">
                     <div className="Home-four-in">
                         <div className="Home-four-one">
                             <h1>Projects.<span>Take a look at my work, right now.</span></h1>

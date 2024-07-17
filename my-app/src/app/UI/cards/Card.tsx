@@ -19,8 +19,8 @@ const Card = () => {
                 
                     <CardComponent title={"Cloud IDE"} link={"https://github.com/saitadikonda99/Online-IDE"}  techStack={["react", "node.js"]} image={K8s}/>
                     <CardComponent title={"Cloud IDE"} link={"https://github.com/saitadikonda99/Online-IDE"}  techStack={["next.js", "Node.js"]} image={ReactImg}/>
-                    <CardComponent title={"Cloud IDE"} link={"https://github.com/saitadikonda99/Online-IDE"}  techStack={["react", "Node.js"]}/> 
-                    <CardComponent title={"Cloud IDE"} link={"https://github.com/saitadikonda99/Online-IDE"}  techStack={["react", "mysql"]}/>
+                    <CardComponent title={"Cloud IDE"} link={"https://github.com/saitadikonda99/Online-IDE"}  techStack={["react", "Node.js"]} image={ReactImg}/>
+                    <CardComponent title={"Cloud IDE"} link={"https://github.com/saitadikonda99/Online-IDE"}  techStack={["react", "mysql"]} image={ReactImg}/>
 
                 <div className="HiddenCard"></div> 
 
@@ -58,7 +58,7 @@ const CardComponent = (props : any) => {
                 </div>
                 <div className="card-three">
                     <div className="card-three-in">
-                        <p>Source Code:</p><a href={props.link}> Github</a>
+                        <p>Source Code:</p> <a href={props.link}> Github</a>
                     </div>
                 </div>
                 <div className="card-four">

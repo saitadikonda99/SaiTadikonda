@@ -2,7 +2,7 @@
 .FooterComponent {
     width: 100%;
     background-color: black;
-    padding: 2rem;
+    padding: 2rem 0rem;
 }
 
 .FooterComponent-in {
