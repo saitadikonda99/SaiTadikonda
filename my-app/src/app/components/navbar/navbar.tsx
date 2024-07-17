@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';   
 import './navbar.css'
 
-import useIsMobile from '../../hooks/Mobile';
+import IsMobile from '../../hooks/Mobile';
 
 // import icons here 
 import { LuMail } from "react-icons/lu";
 import { FaBars } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
 
-const navbar = () => {
+const Navbar = () => {
 
 	const[isNavOpen, setIsNavOpen] = useState(false);
 
@@ -24,7 +24,7 @@ const navbar = () => {
     };
 
 	
-	const { width } = useIsMobile();
+	const { width } = IsMobile();
 	const isMobile = width < 768;
   
   return (
@@ -75,4 +75,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
