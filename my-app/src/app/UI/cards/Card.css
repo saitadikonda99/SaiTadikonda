@@ -87,6 +87,11 @@
     color: rgb(0, 145, 255);
 }
 
+.project-icon-ts {
+    font-size: 1.2rem;
+    color: rgb(0, 145, 255);
+}
+
 .card-three {
     width: 100%;
 }
