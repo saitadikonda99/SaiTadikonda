@@ -5,7 +5,7 @@
 .YoutubeComponent-in {
     width: 80%;
     margin: auto;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem 4rem 0rem;
 }
 
 .Youtubet-one {
@@ -44,6 +44,10 @@
     width: 100%;
     padding: .5rem;
     text-align: center;
+}
+
+.Youtube-two-one-in-one h1 {
+    font-size: 2.5rem;
 }
 
 .Youtube-two-one-in-two {

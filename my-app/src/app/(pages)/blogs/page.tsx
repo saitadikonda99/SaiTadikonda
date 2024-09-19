@@ -9,7 +9,7 @@ import "./page.css";
 import Footer from "../../components/footer/footer";
 
 // import images here
-import ReactImg from "../../assets/React.png";
+import ReactImg from "../../assets/ReactBlog.png";
 import JWTImg from "../../assets/JWT.png";
 import K8SImg from "../../assets/K8S.png";
 import OpenSource from "../../assets/OpenSource.png";

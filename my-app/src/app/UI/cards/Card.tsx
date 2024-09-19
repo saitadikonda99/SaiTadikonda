@@ -9,8 +9,9 @@ import { FaNode } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 
-import K8s from "../../assets/K8S.png";
-import ReactImg from "../../assets/React.png";
+import ReactImg from "../../assets/react.png";
+import Nextjs from "../../assets/next.png";
+
 
 const Card = () => {
   return (
@@ -21,7 +22,7 @@ const Card = () => {
           title={"Student Activity Center"}
           link={"https://github.com/saitadikonda99/Online-IDE"}
           techStack={["next.js", "typescript", "mysql"]}
-          image={K8s}
+          image={Nextjs}
         />
         <CardComponent
           title={"Cloud IDE"}
@@ -33,13 +34,13 @@ const Card = () => {
           title={"Smart Village Revolution"}
           link={"https://github.com/saitadikonda99/Online-IDE"}
           techStack={["next.js"]}
-          image={ReactImg}
+          image={Nextjs}
         />
         <CardComponent
           title={"My Portfolio"}
           link={"https://github.com/saitadikonda99/Online-IDE"}
           techStack={["next.js"]}
-          image={ReactImg}
+          image={Nextjs}
         />
         <CardComponent
           title={"Authentication JWT"}
@@ -51,7 +52,7 @@ const Card = () => {
           title={"Temple Website"}
           link={"https://github.com/saitadikonda99/Online-IDE"}
           techStack={["next.js"]}
-          image={ReactImg}
+          image={Nextjs}
         />
         <CardComponent
           title={"Online Coding Learning"}

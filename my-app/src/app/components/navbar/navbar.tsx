@@ -30,22 +30,17 @@ const Navbar = () => {
   return (
 		<div className="NavComponent">
 			<div className={`NavComponent-in ${isMobile ? 'NavComponent-in-hide' : ''}`}>
-				
-				<div className="Navbar-one">
-					<div className="Navbar-one-in">
-						<LuMail className='mail-icon' />
-					    <a href="mailto:saitadikonda.cse@gmail.com">saitadikonda.cse@gmail.com</a>
-					</div>
-				</div>
+				<div className="NavComponent-in-in">
 
-				<div className="Navbar-two">
-					<div className="Navbar-two-in">
-						<Link href='/' onClick={() => handleScroll("HomeNav")}> Home </Link>
-						<Link href='/' onClick={() => handleScroll("Home-two")}> About me </Link>
-						<Link href='/' onClick={() => handleScroll("Home-three")}> Skills </Link>
-						<Link href='/' onClick={() => handleScroll("Home-four")}> Projects </Link>
-						<Link href='/blogs'> Blogs </Link>
+					<div className="Navbar-two">
+						<div className="Navbar-two-in">
+							<Link href='/' onClick={() => handleScroll("HomeNav")}> Home </Link>
+							<Link href='/' onClick={() => handleScroll("Home-three")}> Skills </Link>
+							<Link href='/' onClick={() => handleScroll("Home-four")}> Projects </Link>
+							<Link href='/blogs'> Blogs </Link>
+						</div>
 					</div>
+					
 				</div>
 			</div> 
 
@@ -65,7 +60,6 @@ const Navbar = () => {
 				</div>
 				<div className={`Nav-links ${isNavOpen ? '' : 'Nav-links-hide'}`}>
 					<Link href='/' onClick={() => handleScroll("HomeNav")}> Home </Link>
-					<Link href='/' onClick={() => handleScroll("Home-two")}> About me </Link>
 					<Link href='/' onClick={() => handleScroll("Home-three")}> Skills </Link>
 					<Link href='/' onClick={() => handleScroll("Home-four")}> Projects </Link>
 					<Link href='/blogs'> Blogs </Link>
