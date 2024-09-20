@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 
 import "./page.css";
@@ -10,11 +9,13 @@ import Terminal from "./UI/terminal/Terminal";
 import Footer from "./components/footer/footer";
 import Card from "./UI/cards/Card";
 import Skills from "./UI/skills/Skill";
-import Youtube from "./UI/youtube/page"
+import Youtube from "./UI/youtube/page";
+import Loader from "./Loader/page";
 
 // import icons here
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaArrowDown } from "react-icons/fa6";
+import { useState, useEffect } from "react";
 
 // import styles here
 
@@ -26,7 +27,18 @@ export default function Home() {
     }
   };
 
-  return (
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+    setTimeout(() => {
+      setIsLoaded(false);
+    }, 2000);
+  }, []);
+
+  return isLoaded ? (
+    <Loader />
+  ) : (
     <div className="HomeComponent">
       <div className="HomeComponent-in">
         <div className="HomeNav">
@@ -114,7 +126,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Youtube /> 
+        <Youtube />
 
         <div className="Footer">
           <Footer />

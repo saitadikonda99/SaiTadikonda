@@ -10,6 +10,7 @@ import IsMobile from '../../hooks/Mobile';
 import { LuMail } from "react-icons/lu";
 import { FaBars } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaBullseye } from 'react-icons/fa';
 
 const Navbar = () => {
 

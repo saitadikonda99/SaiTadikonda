@@ -9,7 +9,8 @@ import { FaNode } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 
-import ReactImg from "../../assets/react.png";
+
+import ReactImg from "../../assets/React.png";
 import Nextjs from "../../assets/next.png";
 
 
